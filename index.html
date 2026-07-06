@@ -63,13 +63,13 @@
       margin-bottom: 20px;
       box-shadow: 0 0 0 5px rgba(30,70,120,0.12), 0 8px 30px rgba(20,50,100,0.2);
       border: 3px solid #fff;
+      overflow: hidden;
     }
-    .monogram span {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      font-weight: 400;
-      color: #fff;
-      letter-spacing: 0.08em;
+    .monogram img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
     }
 
     .name {
@@ -95,8 +95,9 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      margin: 18px 0;
+      margin: 22px 0;
     }
+    .deco { margin: 18px 0; }
 
     .bio {
       font-size: 0.87rem;
@@ -149,6 +150,8 @@
       width: 100%;
     }
 
+    .link-btn.coming-soon { opacity: 0.4; cursor: default; pointer-events: none; }
+
     .footer {
       margin-top: 48px;
       font-size: 0.63rem;
@@ -161,7 +164,7 @@
 </head>
 <body>
   <div class="card">
-    <div class="monogram"><span>DC</span></div>
+    <div class="monogram"><img src="profile.jpg" alt="Diane Camejo"></div>
     <div class="name">Diane Camejo</div>
     <div class="title">Loan Officer &nbsp;·&nbsp; Helm Mortgage Corp.</div>
     <div class="deco">
@@ -171,26 +174,19 @@
     </div>
     <p class="bio">Your mortgage journey starts with a conversation. I'm here to educate, guide, and make the process feel a lot less overwhelming.</p>
     <div class="links">
-
       <a class="link-btn" href="https://calendly.com/dcamejo-helm/30min" target="_blank" style="background: #1e4678; border-color: #1e4678; color: #fff; font-weight: 500;">
         <span class="left"><span class="icon">📅</span> Have Questions? Let's Talk!</span><span class="arrow" style="color: rgba(255,255,255,0.8);">↗</span>
       </a>
-
-      <a class="link-btn" href="https://www.helm.mortgage/dcamejo" target="_blank" style="background: #f0f6ff; border-color: #1e4678; color: #1e4678; font-weight: 500;">
-        <span class="left"><span class="icon">🏠</span> See What You Can Afford</span><span class="arrow" style="color: #1e4678;">↗</span>
-      </a>
-
       <a class="link-btn" href="mailto:dcamejo@helm.mortgage" style="background: #fff; border-color: #1e4678; color: #1e4678; font-weight: 500;">
         <span class="left"><span class="icon">✉️</span> Email Me</span><span class="arrow" style="color: #1e4678;">↗</span>
       </a>
 
       <div class="section-label">Stay Connected</div>
-
       <a class="link-btn" href="https://www.linkedin.com/in/dianecamejo/" target="_blank">
         <span class="left"><span class="icon">💼</span> LinkedIn</span><span class="arrow">↗</span>
       </a>
-      <a class="link-btn" href="https://www.helm.mortgage/dcamejo" target="_blank">
-        <span class="left"><span class="icon">🏡</span> My Profile — Helm Mortgage</span><span class="arrow">↗</span>
+      <a class="link-btn" href="https://www.helm.mortgage" target="_blank">
+        <span class="left"><span class="icon">🏡</span> Helm Mortgage</span><span class="arrow">↗</span>
       </a>
       <a class="link-btn" href="https://www.google.com/maps/place/Helm+Mortgage+Corp./@25.6724979,-80.3714707,17z/data=!4m8!3m7!1s0x88d90061137eaaab:0xe40409cbfed141b8!8m2!3d25.6724979!4d-80.3688958!9m1!1b1!16s%2Fg%2F11gg_zd02t#lrd=0x88d90061137eaaab:0xe40409cbfed141b8,3" target="_blank">
         <span class="left"><span class="icon">⭐</span> Leave Me a Review — Google</span><span class="arrow">↗</span>
